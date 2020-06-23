@@ -1,0 +1,17 @@
+var user = {
+    name: 'john',
+    surname: 'Mike',
+}
+user.name = 'Peter';
+delete user.name;
+
+var fruit = {
+    apple: 20,
+    pear: 20,
+    peach: 10,
+    calculate: function () {
+        return this.apple + this.peach + this.pear
+    }
+};
+console.log(fruit.apple + fruit.pear + fruit.peach)
+fruit.calculate();
